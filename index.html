@@ -1,82 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Mahasiswa</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mahasiswa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+    </header>
 
-  <header>
-    <div class="container">
-      <h1>Gallant Adhiya</h1>
-      <nav>
-        <a href="#biodata">Biodata</a>
-        <a href="#praktikum">Praktikum</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </div>
-  </header>
-
-  <section id="biodata" class="container">
-    <h2>Biodata</h2>
-    <div class="profile">
-      <img src="https://via.placeholder.com/200" alt="Foto Profil" />
-      <div class="info">
-        <p><strong>Nama:</strong> Gallant Adhiya Fauzan</p>
+    <section id="biodata">
+        <h2>Biodata Diri</h2>
+        <p><strong>Nama Lengkap:</strong> John Doe</p>
         <p><strong>NIM:</strong> 123456789</p>
-        <p><strong>Prodi:</strong> Sistem Informasi</p>
-        <p>Saya mahasiswa semester 2 yang sedang belajar pemrograman web dan tertarik dalam desain UI/UX.</p>
-      </div>
-    </div>
-  </section>
+        <p><strong>Program Studi:</strong> Teknik Informatika</p>
+        <p><strong>Deskripsi:</strong> Saya adalah mahasiswa yang tertarik dengan pengembangan perangkat lunak dan teknologi informasi.</p>
+    </section>
 
-  <section id="praktikum" class="container">
-    <h2>Kumpulan Hasil Praktikum</h2>
-    <div class="cards">
-      <div class="card">
-        <i class="fas fa-code fa-2x"></i>
-        <h3>HTML Dasar</h3>
-        <p>Tanggal: 5 April 2025</p>
-        <a href="#">Lihat File</a>
-      </div>
-      <div class="card">
-        <i class="fab fa-css3-alt fa-2x"></i>
-        <h3>CSS Layout</h3>
-        <p>Tanggal: 12 April 2025</p>
-        <a href="#">Lihat File</a>
-      </div>
-      <div class="card">
-        <i class="fab fa-js fa-2x"></i>
-        <h3>JavaScript</h3>
-        <p>Tanggal: 19 April 2025</p>
-        <a href="#">Lihat File</a>
-      </div>
-    </div>
-  </section>
+    <section id="praktikum">
+        <h2>Kumpulan Hasil Praktikum</h2>
+        <div class="praktikum-list">
+            <div class="praktikum-item">
+                <h3>Praktikum 1</h3>
+                <p>Tanggal: 01 Januari 2023</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+            <div class="praktikum-item">
+                <h3>Praktikum 2</h3>
+                <p>Tanggal: 15 Januari 2023</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+            <div class="praktikum-item">
+                <h3>Praktikum 3</h3>
+                <p>Tanggal: 30 Januari 2023</p>
+                <a href="#" class="download-link">Download</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="kontak" class="container">
-    <h2>Kontak Saya</h2>
-    <div class="kontak-info">
-      <p><i class="fas fa-envelope"></i> gallant@example.com</p>
-      <p><i class="fab fa-whatsapp"></i> 0812-3456-7890</p>
-      <p><i class="fab fa-instagram"></i> @gallant.dev</p>
-    </div>
-    <form id="contactForm">
-      <input type="text" id="nama" placeholder="Nama" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <textarea id="pesan" placeholder="Pesan" rows="4" required></textarea>
-      <button type="submit">Kirim Pesan</button>
-    </form>
-    <p id="formMessage"></p>
-  </section>
+    <section id="kontak">
+        <h2>Informasi Kontak</h2>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/johndoe</a></p>
+        
+        <h3>Form Kontak</h3>
+        <form id="contact-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Gallant | Tugas Web Interaktif</p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
