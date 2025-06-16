@@ -2,70 +2,79 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Tugas Mahasiswa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Mahasiswa</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
-    <h1>Website Tugas Mahasiswa</h1>
-    <nav>
-      <a href="#biodata">Biodata</a>
-      <a href="#praktikum">Hasil Praktikum</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
+    <div class="container">
+      <h1>Gallant Adhiya</h1>
+      <nav>
+        <a href="#biodata">Biodata</a>
+        <a href="#praktikum">Praktikum</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="biodata">
+  <section id="biodata" class="container">
     <h2>Biodata</h2>
-    <img src="https://via.placeholder.com/150" alt="Foto Diri" class="foto-diri" />
-    <ul>
-      <li><strong>Nama:</strong> Gallant Adhiya Fauzan</li>
-      <li><strong>NIM:</strong> 123456789</li>
-      <li><strong>Program Studi:</strong> Sistem Informasi</li>
-    </ul>
-    <p>Saya adalah mahasiswa semester 2 yang sedang belajar web development dan tertarik pada dunia teknologi dan UI/UX design.</p>
+    <div class="profile">
+      <img src="https://via.placeholder.com/200" alt="Foto Profil" />
+      <div class="info">
+        <p><strong>Nama:</strong> Gallant Adhiya Fauzan</p>
+        <p><strong>NIM:</strong> 123456789</p>
+        <p><strong>Prodi:</strong> Sistem Informasi</p>
+        <p>Saya mahasiswa semester 2 yang sedang belajar pemrograman web dan tertarik dalam desain UI/UX.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="praktikum">
+  <section id="praktikum" class="container">
     <h2>Kumpulan Hasil Praktikum</h2>
-    <div class="grid-praktikum">
-      <div class="praktikum-card">
-        <h3>Praktikum HTML</h3>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-code fa-2x"></i>
+        <h3>HTML Dasar</h3>
         <p>Tanggal: 5 April 2025</p>
         <a href="#">Lihat File</a>
       </div>
-      <div class="praktikum-card">
-        <h3>Praktikum CSS</h3>
+      <div class="card">
+        <i class="fab fa-css3-alt fa-2x"></i>
+        <h3>CSS Layout</h3>
         <p>Tanggal: 12 April 2025</p>
         <a href="#">Lihat File</a>
       </div>
-      <div class="praktikum-card">
-        <h3>Praktikum JavaScript</h3>
+      <div class="card">
+        <i class="fab fa-js fa-2x"></i>
+        <h3>JavaScript</h3>
         <p>Tanggal: 19 April 2025</p>
         <a href="#">Lihat File</a>
       </div>
     </div>
   </section>
 
-  <section id="kontak">
-    <h2>Kontak</h2>
-    <p>Email: gallant@example.com</p>
-    <p>WhatsApp: 0812-3456-7890</p>
-    <p>Instagram: <a href="#">@gallant.dev</a></p>
-
+  <section id="kontak" class="container">
+    <h2>Kontak Saya</h2>
+    <div class="kontak-info">
+      <p><i class="fas fa-envelope"></i> gallant@example.com</p>
+      <p><i class="fab fa-whatsapp"></i> 0812-3456-7890</p>
+      <p><i class="fab fa-instagram"></i> @gallant.dev</p>
+    </div>
     <form id="contactForm">
       <input type="text" id="nama" placeholder="Nama" required />
       <input type="email" id="email" placeholder="Email" required />
-      <textarea id="pesan" rows="4" placeholder="Pesan" required></textarea>
-      <button type="submit">Kirim</button>
+      <textarea id="pesan" placeholder="Pesan" rows="4" required></textarea>
+      <button type="submit">Kirim Pesan</button>
     </form>
     <p id="formMessage"></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Gallant | Tugas Web Pemrograman</p>
+    <p>&copy; 2025 Gallant | Tugas Web Interaktif</p>
   </footer>
 
   <script src="script.js"></script>
