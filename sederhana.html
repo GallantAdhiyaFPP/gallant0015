@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sederhana Gallant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .bio {
+            padding: 20px;
+        }
+
+        .bio h1 {
+            font-size: 2.5em;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .bio h2 {
+            font-size: 1.2em;
+            color: #b0c4de;
+            margin-bottom: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .bio p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #e6e6fa;
+            text-align: justify;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .info-item strong {
+            color: #ffd700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .bio h1 {
+                font-size: 2em;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bio">
+            <h1>Gallant Adhiya Fauzan Pratama Putra</h1>
+            <h2>2024240015 | Sistem Informasi | Universitas Darma Persada</h2>
+            <p>Saya adalah seorang mahasiswa Sistem Informasi yang memiliki ketertarikan dalam pengembangan teknologi, analisis data, dan solusi digital untuk memecahkan masalah nyata. Saya senang belajar hal baru, khususnya yang berkaitan dengan sistem informasi, pemrograman, dan manajemen proyek berbasis TI. Dengan semangat untuk terus berkembang, saya siap menghadapi tantangan di dunia teknologi yang terus berubah.</p>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Tanggal Lahir</strong>
+                    15 Juli 2005
+                </div>
+                <div class="info-item">
+                    <strong>Alamat</strong>
+                    Bekasi, Tambun Selatan, Taman Puri Cendana Blok B15 No.19
+                </div>
+                <div class="info-item">
+                    <strong>Minat Akademik</strong>
+                    Tertarik pada pengembangan sistem informasi, pemrograman web, serta analisis dan visualisasi data.
+                </div>
+                <div class="info-item">
+                    <strong>Hobi</strong>
+                    Traveling dan Fotografi
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
