@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Gallant 2024240015</title>
+    <style>
+        :root {
+            --primary-color: #034694; /* Chelsea Blue */
+            --accent-color: #ffffff; /* White for accents */
+            --background-color: #d4e4f7; /* Light blue gradient */
+            --text-color: #333;
+            --highlight-color: #d81e05; /* Chelsea Red for subtle highlights */
+            --shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--background-color), #a3c1e0);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background: var(--primary-color);
+            color: var(--accent-color);
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .screenshot-card {
+            background: var(--accent-color);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: none;
+        }
+
+        .screenshot-card .content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .screenshot-card h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .screenshot-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--primary-color);
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MySQL Gallant Adhiya Fauzan Pratama Putra</h1>
+        <p>Hasil dari database MySQL saya</p>
+    </header>
+
+    <div class="container">
+        <div class="screenshot-card">
+            <img src="images/Screenshot 2025-04-14 113204.png" alt="Hasil SQL di CMD" width="600">
+            <div class="content">
+                <h3>Screenshot MySql</h3>
+                <p>Tampilan tabel Persons setelah proses input data dengan SQL.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 MySQL Gallant Adhiya Fauzan Pratama Putra.</p>
+    </footer>
+</body>
+</html>
